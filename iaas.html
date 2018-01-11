@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>
+features
+</title>
+</head>
+<body bgcolor="orange">
+<center><h1>select the features you want</h1></center>
+<form method="POST" action="http://127.0.0.1/cgi-bin/iaas.py">
+<table border="2" cellpadding="5" cellspacing="6" bgcolor="yellow"  width="100%">
+<tr>
+<th><b><h2>SELECT OS TYPE</h2></b></th>
+<td><b><input type="radio" name="os" value="windows 7">WINDOWS 7</b></td>
+<td><b><input type="radio" name="os" value="ubuntu">UBUNTU</b></td>
+<td><b><input type="radio" name="os" value="rhel 7">RHEL 7</b></td>
+<td><b><input type="radio" name="os" value="kali linux">KALI LINUX</b></td>
+<td><b><input type="radio" name="os" value="windows 8">WINDOWS 8</b></td>
+<td><b><input type="radio" name="os" value="centos">CENTOS</b></td>
+</tr>
+<tr>
+<th><b><h2>SELECT RAM</h2></b></th>
+<td><b><input type="radio" name="ram" value="512">512 MB</b></td>
+<td><b><input type="radio" name="ram" value="1024">1024 MB</b></td>
+<td><b><input type="radio" name="ram" value="1536">1536 MB</b></td>
+<td><b><input type="radio" name="ram" value="2048">2048 MB</b></td>
+<td><b><input type="radio" name="ram" value="3072">3072 MB</b></td>
+<td><b><input type="radio" name="ram" value="4096">4096 MB</b></td>
+</tr>
+<tr>
+<th><b><h2>SELECT DISK SIZE</h2></b></th>
+<td><b><input type=radio name="hdd" value="10">10 GB</b></td>
+<td><b><input type=radio name="hdd" value="20">20 GB</b></td>
+<td><b><input type=radio name="hdd" value="30">30 GB</b></td>
+<td><b><input type=radio name="hdd" value="40">40 GB</b></td>
+<td><b><input type=radio name="hdd" value="50">50 GB</b></td>
+<td><b><input type=radio name="hdd" value="0">0 GB(LIVE BOOT)</b></td>
+</tr><tr>
+<th><b><h2>SELECT CPU CORES</h2></b></th>
+<td><b><input type=radio name="cores" value="1">1 CORE</b></td>
+<td><b><input type=radio name="cores" value="2">2 CORES</b></td>
+<td><b><input type=radio name="cores" value="3">3 CORES</b></td>
+</tr>
+</table>
+<br/>
+<b>name</b><input type="text" name="n" placeholder="name of your os">
+<b>password</b><input type = "password" name = "p" placeholder="access password">
+<b>port no.</b><input type = "text" name = "port" placeholder="Range(5900-65000)">
+<br/>
+<br/>
+<br/>
+<center><input type="submit" value="proceed"></center>
+</form>
+</body>
+</html>

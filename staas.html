@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>storage as a service</title>
+</head>
+<body bgcolor = "skyblue">
+
+<center>
+<h2>give diskname and size</h2>
+<form action="http://127.0.0.1/cgi-bin/staas.py" method="POST">
+<b><h3>diskname</h3></b><input type="text" name="n" placeholder="unique name"></br>
+<b><h3>disksize</h3></b><input type = "text" name = "s" placeholder="example:2G"></br>
+<h3>select the protocol</h3>
+<b><input type=radio name="prt" value="nfs">nfs</b>
+<b><input type=radio name="prt" value="cifs">cifs</b>
+<b><input type=radio name="prt" value="sshfs">sshfs</b>
+</br>
+<h3>select the type of storage</h3>
+<b><input type=radio name="type" value="object">object storage</b>
+<b><input type=radio name="type" value="block">block storage</b>
+</br></br>
+<b>only for cifs-clients</b></br>
+<b>samba username</b><input type="text" name="usr" placeholder="samba user"></br>
+<b>samba password</b><input type="password" name="pwd" placeholder="samba password"></br>
+<h3><input type="submit" value = "submit"></h3>
+
+</form>
+</center>
+</body>
+</html>
